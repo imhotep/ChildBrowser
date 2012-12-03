@@ -36,8 +36,10 @@
     </platform>
     <!-- ios -->
     <platform name="ios">
-        <plugins-plist key="ChildBrowser"
-                    string="ChildBrowserCommand" />
+        <config-file target="config.xml" parent="/cordova/plugins">
+            <plugin name="ChildBrowser"
+                value="ChildBrowserCommand"/>
+        </config-file>
 
         <resource-file src="ChildBrowser.bundle" />
         <resource-file src="ChildBrowserViewController.xib" />
