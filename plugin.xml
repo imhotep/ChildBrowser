@@ -36,18 +36,18 @@
     </platform>
     <!-- ios -->
     <platform name="ios">
-        <config-file target="config.xml" parent="/cordova/plugins">
+        <config-file target="config.xml" parent="/widget/plugins">
             <plugin name="ChildBrowser"
                 value="ChildBrowserCommand"/>
         </config-file>
 
-        <resource-file src="ChildBrowser.bundle" />
-        <resource-file src="ChildBrowserViewController.xib" />
+        <resource-file src="src/ios/ChildBrowser.bundle" />
+        <resource-file src="src/ios/ChildBrowserViewController.xib" />
 
-        <header-file src="ChildBrowserCommand.h" />
-        <header-file src="ChildBrowserViewController.h" />
+        <header-file src="src/ios/ChildBrowserCommand.h" />
+        <header-file src="src/ios/ChildBrowserViewController.h" />
 
-        <source-file src="ChildBrowserCommand.m" />
-        <source-file src="ChildBrowserViewController.m" />
+        <source-file src="src/ios/ChildBrowserCommand.m" />
+        <source-file src="src/ios/ChildBrowserViewController.m" />
     </platform>
 </plugin>
